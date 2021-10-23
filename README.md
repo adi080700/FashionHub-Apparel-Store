@@ -32,6 +32,10 @@ If you need any help regarding this project, feel free to mail your doubts.
 Email-adityadingankar08@gmail.com
 
 
+This project has 2 parts. All the products can be added through the admin dashboard and it is pretty interactive.
+
+Admin dashboard can be accessed through http://127.0.0.1:8000/admin/login
+
 Final Year Engineering Project, Mumbai University 
 
 
