@@ -12,6 +12,8 @@ Requirements:
 3)Laravel 
 
 After installing the required applications
+
+
 STEPS:
 
 Step1: Open Xampp and switch on apache and mysql
