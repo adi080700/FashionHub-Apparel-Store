@@ -36,6 +36,9 @@ This project has 2 parts. All the products can be added through the admin dashbo
 
 Admin dashboard can be accessed through http://127.0.0.1:8000/admin/login
 
+Admin Email: admin@gmail.com
+Admin Password : admin
+
 Final Year Engineering Project, Mumbai University 
 
 
