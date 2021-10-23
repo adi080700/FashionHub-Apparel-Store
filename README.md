@@ -12,7 +12,9 @@ After installing the required applications
 STEPS:
 
 Start Xampp
+
 Open MyPHPAdmin and create a database with the name : ecommerce
+
 Import the file "ecommerce.sql"
 
 Step1: Open Xampp and switch on apache and mysql
