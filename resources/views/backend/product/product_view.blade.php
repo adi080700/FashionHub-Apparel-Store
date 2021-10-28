@@ -41,7 +41,7 @@
 	 <tr>
 		<td> <img src="{{ asset($item->product_thambnail) }}" style="width: 60px; height: 50px;">  </td>
 		<td>{{ $item->product_name_en }}</td>
-		 <td>{{ $item->selling_price }} $</td>
+		 <td>Rs. {{ $item->selling_price }} </td>
 		 <td>{{ $item->product_qty }} Pic</td>
 
 		 <td> 
@@ -79,11 +79,11 @@
  <a href="{{ route('product.delete',$item->id) }}" class="btn btn-danger" title="Delete Data" id="delete">
  	<i class="fa fa-trash"></i></a>
 
-@if($item->status == 1)
+<!-- @if($item->status == 1)
  <a href="{{ route('product.inactive',$item->id) }}" class="btn btn-danger" title="Inactive Now"><i class="fa fa-arrow-down"></i> </a>
 	 @else
  <a href="{{ route('product.active',$item->id) }}" class="btn btn-success" title="Active Now"><i class="fa fa-arrow-up"></i> </a>
-	 @endif
+	 @endif -->
 
 
 

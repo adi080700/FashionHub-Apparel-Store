@@ -90,7 +90,7 @@
 
 
 <div class="row"> <!-- start 2nd row  -->
-			<div class="col-md-4">
+			<div class="col-md-6">
 
 	 <div class="form-group">
 	<h5>SubSubCategory Select <span class="text-danger">*</span></h5>
@@ -107,10 +107,10 @@
 				
 			</div> <!-- end col md 4 -->
 
-			<div class="col-md-4">
+			<div class="col-md-6">
 
 				 <div class="form-group">
-			<h5>Product Name En <span class="text-danger">*</span></h5>
+			<h5>Product Name  <span class="text-danger">*</span></h5>
 			<div class="controls">
 				<input type="text" name="product_name_en" class="form-control" required="">
      @error('product_name_en') 
@@ -122,7 +122,7 @@
 			</div> <!-- end col md 4 -->
 
 
-			<div class="col-md-4">
+			<!-- <div class="col-md-4">
 
 				 <div class="form-group">
 			<h5>Product Name Hin <span class="text-danger">*</span></h5>
@@ -134,7 +134,7 @@
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 4 -->
+			</div>  -->
 			
 		</div> <!-- end 2nd row  -->
 
@@ -169,20 +169,20 @@
 				
 			</div> <!-- end col md 4 -->
 
-
 			<div class="col-md-4">
 
 				 <div class="form-group">
-			<h5>Product Tags En <span class="text-danger">*</span></h5>
+			<h5>Product Tags  <span class="text-danger">*</span></h5>
 			<div class="controls">
-	 <input type="text" name="product_tags_en" class="form-control" value="Lorem,Ipsum,Amet" data-role="tagsinput" required="">
+	 <input type="text" name="product_tags_en" class="form-control" value="" data-role="tagsinput" required="">
      @error('product_tags_en') 
 	 <span class="text-danger">{{ $message }}</span>
 	 @enderror
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 4 -->
+			</div>
+			 <!-- end col md 4 -->
 			
 		</div> <!-- end 3RD row  -->
 
@@ -192,7 +192,7 @@
 
 
 <div class="row"> <!-- start 4th row  -->
-			<div class="col-md-4">
+			<!-- <div class="col-md-4">
 
 	    <div class="form-group">
 			<h5>Product Tags Hin <span class="text-danger">*</span></h5>
@@ -204,24 +204,14 @@
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 4 -->
-
-			<div class="col-md-4">
-
-				 <div class="form-group">
-			<h5>Product Size En <span class="text-danger">*</span></h5>
-			<div class="controls">
-	 <input type="text" name="product_size_en" class="form-control" value="Small,Midium,Large" data-role="tagsinput" required="">
-     @error('product_size_en') 
-	 <span class="text-danger">{{ $message }}</span>
-	 @enderror
-	 		 </div>
-		</div>
-				
-			</div> <!-- end col md 4 -->
+			</div>  -->
+			<!-- end col md 4 -->
 
 
-			<div class="col-md-4">
+ <!-- end col md 4 -->
+
+
+			<!-- <div class="col-md-4">
 
 				 <div class="form-group">
 			<h5>Product Size Hin <span class="text-danger">*</span></h5>
@@ -233,7 +223,8 @@
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 4 -->
+			</div> -->
+			 <!-- end col md 4 -->
 			
 		</div> <!-- end 4th row  -->
 
@@ -243,18 +234,33 @@
 			<div class="col-md-4">
 
 	    <div class="form-group">
-			<h5>Product Color En <span class="text-danger">*</span></h5>
+			<h5>Product Color <span class="text-danger">*</span></h5>
 			<div class="controls">
-	 <input type="text" name="product_color_en" class="form-control" value="red,Black,Amet" data-role="tagsinput" required="">
+	 <input type="text" name="product_color_en" class="form-control" value="" data-role="tagsinput" required="">
      @error('product_color_en') 
 	 <span class="text-danger">{{ $message }}</span>
 	 @enderror
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 4 -->
-
+			</div> 
+			
+			
 			<div class="col-md-4">
+
+				 <div class="form-group">
+			<h5>Product Size  <span class="text-danger">*</span></h5>
+			<div class="controls">
+	 <input type="text" name="product_size_en" class="form-control" value="Small,Medium,Large" data-role="tagsinput" required="">
+     @error('product_size_en') 
+	 <span class="text-danger">{{ $message }}</span>
+	 @enderror
+	 		 </div>
+		</div>
+				
+			</div><!-- end col md 4 -->
+
+			<!-- <div class="col-md-4">
 
 				 <div class="form-group">
 			<h5>Product Color Hin <span class="text-danger">*</span></h5>
@@ -266,7 +272,8 @@
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 4 -->
+			</div>  -->
+			<!-- end col md 4 -->
 
 
 			<div class="col-md-4">
@@ -306,7 +313,7 @@
 			<div class="col-md-4">
 
 	    <div class="form-group">
-			<h5>Main Thambnail <span class="text-danger">*</span></h5>
+			<h5>Main Thumbnail <span class="text-danger">*</span></h5>
 			<div class="controls">
 	 <input type="file" name="product_thambnail" class="form-control" onChange="mainThamUrl(this)" required="" >
      @error('product_thambnail') 
@@ -347,7 +354,7 @@
 			<div class="col-md-6">
 
 	    <div class="form-group">
-			<h5>Short Description English <span class="text-danger">*</span></h5>
+			<h5>Short Description  <span class="text-danger">*</span></h5>
 			<div class="controls">
 	<textarea name="short_descp_en" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>     
 	 		 </div>
@@ -355,7 +362,7 @@
 				
 			</div> <!-- end col md 6 -->
 
-			<div class="col-md-6">
+			<!-- <div class="col-md-6">
 
 	     <div class="form-group">
 			<h5>Short Description Hindi <span class="text-danger">*</span></h5>
@@ -363,9 +370,10 @@
 	<textarea name="short_descp_hin" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>     
 	 		 </div>
 		</div>
-				 
+				  
 				
-			</div> <!-- end col md 6 -->		 
+			</div>  -->
+			<!-- end col md 6		  -->
 			
 		</div> <!-- end 7th row  -->
 
@@ -377,7 +385,7 @@
 			<div class="col-md-6">
 
 	    <div class="form-group">
-			<h5>Long Description English <span class="text-danger">*</span></h5>
+			<h5>Long Description  <span class="text-danger">*</span></h5>
 			<div class="controls">
 	<textarea id="editor1" name="long_descp_en" rows="10" cols="80" required="">
 		Long Description English
@@ -387,7 +395,7 @@
 				
 			</div> <!-- end col md 6 -->
 
-			<div class="col-md-6">
+			<!-- <div class="col-md-6">
 
 	     <div class="form-group">
 			<h5>Long Description Hindi <span class="text-danger">*</span></h5>
@@ -399,7 +407,8 @@
 		</div>
 				 
 				
-			</div> <!-- end col md 6 -->		 
+			</div>  -->
+			<!-- end col md 6 -->		 
 			
 		</div> <!-- end 8th row  -->
 

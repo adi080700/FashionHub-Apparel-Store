@@ -85,10 +85,10 @@ My Checkout
 					 
 
 <div class="form-group">
-	<h5><b>Division Select </b> <span class="text-danger">*</span></h5>
+	<h5><b> Select State </b> <span class="text-danger">*</span></h5>
 	<div class="controls">
 		<select name="division_id" class="form-control" required="" >
-			<option value="" selected="" disabled="">Select Division</option>
+			<option value="" selected="" disabled="">Select State</option>
 			@foreach($divisions as $item)
  <option value="{{ $item->id }}">{{ $item->division_name }}</option>	
 			@endforeach
@@ -101,7 +101,7 @@ My Checkout
 
 
 		 <div class="form-group">
-	<h5><b>District Select</b>  <span class="text-danger">*</span></h5>
+	<h5><b> Select District</b>  <span class="text-danger">*</span></h5>
 	<div class="controls">
 		<select name="district_id" class="form-control" required="" >
 			<option value="" selected="" disabled="">Select District</option>
@@ -115,10 +115,10 @@ My Checkout
 
 
 		 <div class="form-group">
-	<h5><b>State Select</b> <span class="text-danger">*</span></h5>
+	<h5><b> Select City</b> <span class="text-danger">*</span></h5>
 	<div class="controls">
 		<select name="state_id" class="form-control" required="" >
-			<option value="" selected="" disabled="">Select State</option>
+			<option value="" selected="" disabled="">Select City</option>
 			 
 		</select>
 		@error('state_id') 
@@ -129,8 +129,8 @@ My Checkout
 				 
 					 
     <div class="form-group">
-	 <label class="info-title" for="exampleInputEmail1">Notes <span>*</span></label>
-	     <textarea class="form-control" cols="30" rows="5" placeholder="Notes" name="notes"></textarea>
+	 <label class="info-title" for="exampleInputEmail1">Address <span>*</span></label>
+	     <textarea class="form-control" cols="30" rows="5" placeholder="Address" name="notes"></textarea>
 	  </div>  <!-- // end form group  -->
 
 
@@ -248,11 +248,12 @@ My Checkout
        <img src="{{ asset('frontend/assets/images/payments/4.png') }}">		    		
 		    	</div> <!-- end col md 4 -->
 
-		    	<div class="col-md-4">
+		    	<!-- <div class="col-md-4">
 		    		<label for="">Card</label> 		
        <input type="radio" name="payment_method" value="card">	
 		<img src="{{ asset('frontend/assets/images/payments/3.png') }}">    		
-		    	</div> <!-- end col md 4 -->
+		    	</div>  -->
+				<!-- end col md 4 -->
 
 		    	<div class="col-md-4">
 		    		<label for="">Cash</label> 		
@@ -263,7 +264,7 @@ My Checkout
 				 	
 			</div> <!-- // end row  -->
 <hr>
-  <button type="submit" class="btn-upper btn btn-primary checkout-page-button">Payment Step</button>
+  <button type="submit" class="btn-upper btn btn-primary checkout-page-button">Proceed to Payment </button>
 
 
 		</div>

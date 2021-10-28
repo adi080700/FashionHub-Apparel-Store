@@ -37,7 +37,7 @@
 	 <input type="hidden" name="old_image" value="{{ $brand->brand_image }}">			   
 
 	 <div class="form-group">
-		<h5>Brand Name English  <span class="text-danger">*</span></h5>
+		<h5>Brand Name   <span class="text-danger">*</span></h5>
 		<div class="controls">
 	 <input type="text"  name="brand_name_en" class="form-control" value="{{ $brand->brand_name_en }}" > 
 	 @error('brand_name_en') 
@@ -47,7 +47,7 @@
 	</div>
 
 
-	<div class="form-group">
+	<!-- <div class="form-group">
 		<h5>Brand Name Hindi <span class="text-danger">*</span></h5>
 		<div class="controls">
 	 <input type="text" name="brand_name_hin" class="form-control" value="{{ $brand->brand_name_hin }}" >
@@ -55,7 +55,7 @@
 	 <span class="text-danger">{{ $message }}</span>
 	 @enderror 
 	  </div>
-	</div>
+	</div> -->
 
 
 

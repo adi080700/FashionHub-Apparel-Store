@@ -19,7 +19,7 @@
 		<!-- Main content -->
 		<section class="content">
 			<div class="row">
-				<div class="col-xl-3 col-6">
+				<!-- <div class="col-xl-3 col-6">
 					<div class="box overflow-hidden pull-up">
 						<div class="box-body">							
 		<div class="icon bg-primary-light rounded w-60 h-60">
@@ -27,12 +27,12 @@
 		</div>
 		<div>
 			<p class="text-mute mt-20 mb-0 font-size-16">Today's Sale</p>
-			<h3 class="text-white mb-0 font-weight-500">${{ $today  }} <small class="text-success"><i class="fa fa-caret-up"></i> Usd</small></h3>
+			<h3 class="text-white mb-0 font-weight-500">Rs.{{ $today  }} <small class="text-success"><i class="fa fa-caret-up"></i> Inr</small></h3>
 		</div>
 	</div>
 </div>
-</div>
-<div class="col-xl-3 col-6">
+</div> -->
+<div class="col-xl-4 col-6">
 <div class="box overflow-hidden pull-up">
 	<div class="box-body">							
 		<div class="icon bg-warning-light rounded w-60 h-60">
@@ -40,12 +40,12 @@
 		</div>
 		<div>
 			<p class="text-mute mt-20 mb-0 font-size-16">Monthly Sale </p>
-			<h3 class="text-white mb-0 font-weight-500">${{ $month }} <small class="text-success"><i class="fa fa-caret-up"></i> Usd</small></h3>
+			<h3 class="text-white mb-0 font-weight-500">Rs.{{ $month }} <small class="text-success"><i class="fa fa-caret-up"></i> Inr</small></h3>
 		</div>
 	</div>
 </div>
 </div>
-<div class="col-xl-3 col-6">
+<div class="col-xl-4 col-6">
 <div class="box overflow-hidden pull-up">
 	<div class="box-body">							
 		<div class="icon bg-info-light rounded w-60 h-60">
@@ -53,12 +53,12 @@
 		</div>
 		<div>
 			<p class="text-mute mt-20 mb-0 font-size-16">Yearly Sale </p>
-			<h3 class="text-white mb-0 font-weight-500">${{ $year }} <small class="text-danger"><i class="fa fa-caret-down"></i> Usd</small></h3>
+			<h3 class="text-white mb-0 font-weight-500">Rs.{{ $year }} <small class="text-danger"><i class="fa fa-caret-down"></i> Inr</small></h3>
 		</div>
 	</div>
 </div>
 </div>
-<div class="col-xl-3 col-6">
+<div class="col-xl-4 col-6">
 <div class="box overflow-hidden pull-up">
 	<div class="box-body">							
 		<div class="icon bg-danger-light rounded w-60 h-60">
@@ -120,7 +120,7 @@ $orders = App\Models\Order::where('status','pending')->orderBy('id','DESC')->get
 
 			<td>
 				<span class="text-fade font-weight-600 d-block font-size-16">
-					$ {{ $item->amount }}
+					Rs. {{ $item->amount }}
 				</span>
 				 
 			</td>

@@ -112,7 +112,7 @@
      @if($slider == true)
 
 
-         <li class="treeview {{ ($prefix == '/slider')?'active':'' }}  ">
+         <!-- <li class="treeview {{ ($prefix == '/slider')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Slider</span>
@@ -126,14 +126,14 @@
              
              
           </ul>
-        </li>   
+        </li>    -->
 
         @else
         @endif
 
      @if($coupons == true)
 
-         <li class="treeview {{ ($prefix == '/coupons')?'active':'' }}  ">
+         <!-- <li class="treeview {{ ($prefix == '/coupons')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Coupons</span>
@@ -147,14 +147,14 @@
              
              
           </ul>
-        </li>      
+        </li>       -->
         @else
         @endif
 
      @if($shipping == true)
 
 
-         <li class="treeview {{ ($prefix == '/shipping')?'active':'' }}  ">
+         <!-- <li class="treeview {{ ($prefix == '/shipping')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Shipping Area</span>
@@ -172,14 +172,14 @@
              
              
           </ul>
-        </li>        
+        </li>         -->
         @else
         @endif
 
      @if($blog == true)
 
 
-        <li class="treeview {{ ($prefix == '/blog')?'active':'' }}  ">
+        <!-- <li class="treeview {{ ($prefix == '/blog')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Manage Blog</span>
@@ -195,14 +195,14 @@
          <li class="{{ ($route == 'add.post')? 'active':'' }}"><a href="{{ route('add.post') }}"><i class="ti-more"></i>Add Blog Post</a></li>
   
           </ul>
-        </li>       
+        </li>        -->
 
         @else
         @endif
 
      @if($setting == true)
 
-<li class="treeview {{ ($prefix == '/setting')?'active':'' }}  ">
+<!-- <li class="treeview {{ ($prefix == '/setting')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Manage Setting</span>
@@ -217,14 +217,14 @@
  
   
           </ul>
-        </li>
+        </li> -->
 
         @else
         @endif
 
      @if($returnorder == true)
 
-        <li class="treeview {{ ($prefix == '/return')?'active':'' }}  ">
+        <!-- <li class="treeview {{ ($prefix == '/return')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Return Order</span>
@@ -239,7 +239,7 @@
  
   
           </ul>
-        </li>    
+        </li>     -->
 
         @else
         @endif
@@ -247,7 +247,7 @@
      @if($review == true)
 
 
-          <li class="treeview {{ ($prefix == '/review')?'active':'' }}  ">
+          <!-- <li class="treeview {{ ($prefix == '/review')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Manage Review</span>
@@ -262,18 +262,18 @@
  
   
           </ul>
-        </li>    
+        </li>     -->
 
         @else
         @endif
 
    
 		 
-        <li class="header nav-small-cap">User Interface</li>
+        <!-- <li class="header nav-small-cap">User Interface</li> -->
 
         
 		    @if($orders == true)
-        <li class="treeview {{ ($prefix == '/orders')?'active':'' }}  ">
+        <!-- <li class="treeview {{ ($prefix == '/orders')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Orders </span>
@@ -299,14 +299,14 @@
              
              
           </ul>
-        </li>         
+        </li>          -->
         @else
         @endif
 
      @if($stock == true)
 
 
- <li class="treeview {{ ($prefix == '/stock')?'active':'' }}  ">
+ <!-- <li class="treeview {{ ($prefix == '/stock')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Manage Stock </span>
@@ -319,14 +319,14 @@
 
         
           </ul>
-        </li>    
+        </li>     -->
 
 		    @else
         @endif
 
      @if($reports == true)
 
-		 <li class="treeview {{ ($prefix == '/reports')?'active':'' }}  ">
+		 <!-- <li class="treeview {{ ($prefix == '/reports')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>All Reports </span>
@@ -339,7 +339,7 @@
 
         
           </ul>
-        </li>         
+        </li>          -->
  
 
         @else
@@ -347,7 +347,7 @@
 
      @if($alluser == true)
 
-     <li class="treeview {{ ($prefix == '/alluser')?'active':'' }}  ">
+     <!-- <li class="treeview {{ ($prefix == '/alluser')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>All Users </span>
@@ -360,14 +360,14 @@
 
         
           </ul>
-        </li>    
+        </li>     -->
         @else
         @endif
 
      @if($adminuserrole == true)
 
 
-        <li class="treeview {{ ($prefix == '/adminuserrole')?'active':'' }}  ">
+        <!-- <li class="treeview {{ ($prefix == '/adminuserrole')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Admin User Role </span>
@@ -380,7 +380,7 @@
 
         
           </ul>
-        </li>    
+        </li>     -->
 
         @else
         @endif

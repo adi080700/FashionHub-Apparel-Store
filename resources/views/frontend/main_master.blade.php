@@ -480,7 +480,7 @@ function addToWishList(product_id){
                         ${value.product.discount_price == null
                             ? `${value.product.selling_price}`
                             :
-                            `${value.product.discount_price} <span>${value.product.selling_price}</span>`
+                            `Rs.${value.product.discount_price} <span>Rs. ${value.product.selling_price}</span>`
                         }
 
                             
@@ -605,7 +605,7 @@ function addToWishList(product_id){
             </td>
 
              <td class="col-md-2">
-            <strong>$${value.subtotal} </strong> 
+            <strong>Rs.${value.subtotal} </strong> 
             </td>
 
          
@@ -774,10 +774,10 @@ function addToWishList(product_id){
                     `<tr>
                 <th>
                     <div class="cart-sub-total">
-                        Subtotal<span class="inner-left-md">$ ${data.total}</span>
+                        Subtotal<span class="inner-left-md">Rs. ${data.total}</span>
                     </div>
                     <div class="cart-grand-total">
-                        Grand Total<span class="inner-left-md">$ ${data.total}</span>
+                        Grand Total<span class="inner-left-md">Rs. ${data.total}</span>
                     </div>
                 </th>
             </tr>`
@@ -789,10 +789,10 @@ function addToWishList(product_id){
                     `<tr>
         <th>
             <div class="cart-sub-total">
-                Subtotal<span class="inner-left-md">$ ${data.subtotal}</span>
+                Subtotal<span class="inner-left-md">Rs. ${data.subtotal}</span>
             </div>
             <div class="cart-sub-total">
-                Coupon<span class="inner-left-md">$ ${data.coupon_name}</span>
+                Coupon<span class="inner-left-md">Rs. ${data.coupon_name}</span>
                 <button type="submit" onclick="couponRemove()"><i class="fa fa-times"></i>  </button>
             </div>
 

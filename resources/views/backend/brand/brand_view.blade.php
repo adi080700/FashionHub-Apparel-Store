@@ -26,8 +26,8 @@
 					  <table id="example1" class="table table-bordered table-striped">
 						<thead>
 							<tr>
-								<th>Brand En </th>
-								<th>Brand Hin</th>
+								<th>Brand </th>
+								<!-- <th>Brand Hin</th> -->
 								<th>Image</th>
 								<th>Action</th>
 								 
@@ -37,7 +37,7 @@
 	 @foreach($brands as $item)
 	 <tr>
 		<td>{{ $item->brand_name_en }}</td>
-		<td>{{ $item->brand_name_hin }}</td>
+		<!-- <td>{{ $item->brand_name_hin }}</td> -->
 		<td><img src="{{ asset($item->brand_image) }}" style="width: 70px; height: 40px;"> </td>
 		<td>
  <a href="{{ route('brand.edit',$item->id) }}" class="btn btn-info" title="Edit Data"><i class="fa fa-pencil"></i> </a>
@@ -80,7 +80,7 @@
 					   
 
 	 <div class="form-group">
-		<h5>Brand Name English  <span class="text-danger">*</span></h5>
+		<h5>Brand Name   <span class="text-danger">*</span></h5>
 		<div class="controls">
 	 <input type="text"  name="brand_name_en" class="form-control" > 
 	 @error('brand_name_en') 
@@ -91,7 +91,7 @@
 
 
 	<div class="form-group">
-		<h5>Brand Name Hindi <span class="text-danger">*</span></h5>
+		<h5>Brand Name Confirm <span class="text-danger">*</span></h5>
 		<div class="controls">
 	 <input type="text" name="brand_name_hin" class="form-control" >
      @error('brand_name_hin') 
