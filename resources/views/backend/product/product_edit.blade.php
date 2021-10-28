@@ -94,7 +94,7 @@
 
 
 <div class="row"> <!-- start 2nd row  -->
-			<div class="col-md-4">
+			<div class="col-md-6">
 
 	 <div class="form-group">
 	<h5>SubSubCategory Select <span class="text-danger">*</span></h5>
@@ -115,10 +115,10 @@
 				
 			</div> <!-- end col md 4 -->
 
-			<div class="col-md-4">
+			<div class="col-md-6">
 
 				 <div class="form-group">
-			<h5>Product Name En <span class="text-danger">*</span></h5>
+			<h5>Product Name <span class="text-danger">*</span></h5>
 			<div class="controls">
 	 <input type="text" name="product_name_en" class="form-control" required="" value="{{ $products->product_name_en }}">
      @error('product_name_en') 
@@ -130,7 +130,7 @@
 			</div> <!-- end col md 4 -->
 
 
-			<div class="col-md-4">
+			<!-- <div class="col-md-4">
 
 				 <div class="form-group">
 			<h5>Product Name Hin <span class="text-danger">*</span></h5>
@@ -142,7 +142,8 @@
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 4 -->
+			</div>  -->
+			<!-- end col md 4 -->
 			
 		</div> <!-- end 2nd row  -->
 
@@ -181,7 +182,7 @@
 			<div class="col-md-4">
 
 				 <div class="form-group">
-			<h5>Product Tags En <span class="text-danger">*</span></h5>
+			<h5>Product Tags <span class="text-danger">*</span></h5>
 			<div class="controls">
 	 <input type="text" name="product_tags_en" class="form-control" value="{{ $products->product_tags_en }}" data-role="tagsinput" required="">
      @error('product_tags_en') 
@@ -200,7 +201,7 @@
 
 
 <div class="row"> <!-- start 4th row  -->
-			<div class="col-md-4">
+			<!-- <div class="col-md-4">
 
 	    <div class="form-group">
 			<h5>Product Tags Hin <span class="text-danger">*</span></h5>
@@ -212,12 +213,13 @@
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 4 -->
+			</div> -->
+			 <!-- end col md 4 -->
 
 			<div class="col-md-4">
 
 				 <div class="form-group">
-			<h5>Product Size En <span class="text-danger">*</span></h5>
+			<h5>Product Size  <span class="text-danger">*</span></h5>
 			<div class="controls">
 	 <input type="text" name="product_size_en" class="form-control" value="{{ $products->product_size_en }}" data-role="tagsinput" >
      @error('product_size_en') 
@@ -229,7 +231,7 @@
 			</div> <!-- end col md 4 -->
 
 
-			<div class="col-md-4">
+			<!-- <div class="col-md-4">
 
 				 <div class="form-group">
 			<h5>Product Size Hin <span class="text-danger">*</span></h5>
@@ -241,7 +243,8 @@
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 4 -->
+			</div> -->
+			 <!-- end col md 4 -->
 			
 		</div> <!-- end 4th row  -->
 
@@ -262,7 +265,7 @@
 				
 			</div> <!-- end col md 6 -->
 
-			<div class="col-md-6">
+			<!-- <div class="col-md-6">
 
 				 <div class="form-group">
 			<h5>Product Color Hin <span class="text-danger">*</span></h5>
@@ -274,7 +277,8 @@
 	 		 </div>
 		</div>
 				
-			</div> <!-- end col md 6 -->
+			</div> -->
+			 <!-- end col md 6 -->
 
  
 			
@@ -327,7 +331,7 @@
 			<div class="col-md-6">
 
 	    <div class="form-group">
-			<h5>Short Description English <span class="text-danger">*</span></h5>
+			<h5>Short Description  <span class="text-danger">*</span></h5>
 			<div class="controls">
 	<textarea name="short_descp_en" id="textarea" class="form-control" required placeholder="Textarea text">
 		{!! $products->short_descp_en !!}
@@ -337,7 +341,7 @@
 				
 			</div> <!-- end col md 6 -->
 
-			<div class="col-md-6">
+			<!-- <div class="col-md-6">
 
 	     <div class="form-group">
 			<h5>Short Description Hindi <span class="text-danger">*</span></h5>
@@ -349,7 +353,8 @@
 		</div>
 				 
 				
-			</div> <!-- end col md 6 -->		 
+			</div> -->
+			 <!-- end col md 6 -->		 
 			
 		</div> <!-- end 7th row  -->
 
@@ -361,7 +366,7 @@
 			<div class="col-md-6">
 
 	    <div class="form-group">
-			<h5>Long Description English <span class="text-danger">*</span></h5>
+			<h5>Long Description  <span class="text-danger">*</span></h5>
 			<div class="controls">
 	<textarea id="editor1" name="long_descp_en" rows="10" cols="80" required="">
 		{!! $products->long_descp_en !!}
@@ -371,7 +376,7 @@
 				
 			</div> <!-- end col md 6 -->
 
-			<div class="col-md-6">
+			<!-- <div class="col-md-6">
 
 	     <div class="form-group">
 			<h5>Long Description Hindi <span class="text-danger">*</span></h5>
@@ -383,7 +388,8 @@
 		</div>
 				 
 				
-			</div> <!-- end col md 6 -->		 
+			</div>  -->
+			<!-- end col md 6 -->		 
 			
 		</div> <!-- end 8th row  -->
 

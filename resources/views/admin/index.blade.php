@@ -93,23 +93,23 @@ $orders = App\Models\Order::where('status','pending')->orderBy('id','DESC')->get
 				<thead>
 
 <tr class="text-uppercase bg-lightest">
-	<th style="min-width: 250px"><span class="text-white">Date</span></th>
+	<!-- <th style="min-width: 250px"><span class="text-white">Date</span></th> -->
 	<th style="min-width: 100px"><span class="text-fade">Invoice</span></th>
 	<th style="min-width: 100px"><span class="text-fade">Amount</span></th>
 	<th style="min-width: 150px"><span class="text-fade">Payment</span></th>
 	<th style="min-width: 130px"><span class="text-fade">Status</span></th>
-	<th style="min-width: 120px"><span class="text-fade">Process</span> </th>
+	<!-- <th style="min-width: 120px"><span class="text-fade">Process</span> </th> -->
 </tr>
 				</thead>
 				<tbody>
 		
     @foreach($orders as $item)
 		<tr>										
-			<td class="pl-0 py-8">
+			<!-- <td class="pl-0 py-8">
 				 <span class="text-white font-weight-600 d-block font-size-16">
 					{{ Carbon\Carbon::parse($item->order_date)->diffForHumans()  }}
 				</span>
-			</td>
+			</td> -->
 
 			<td>
 				 
@@ -135,10 +135,10 @@ $orders = App\Models\Order::where('status','pending')->orderBy('id','DESC')->get
 				<span class="badge badge-primary-light badge-lg">{{ $item->status }}</span>
 			</td>
 
-			<td class="text-right">
+			<!-- <td class="text-right">
 				<a href="#" class="waves-effect waves-light btn btn-info btn-circle mx-5"><span class="mdi mdi-bookmark-plus"></span></a>
 				<a href="#" class="waves-effect waves-light btn btn-info btn-circle mx-5"><span class="mdi mdi-arrow-right"></span></a>
-			</td>
+			</td> -->
 		</tr>
 		@endforeach
 
