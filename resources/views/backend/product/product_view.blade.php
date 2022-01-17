@@ -27,7 +27,7 @@
 						<thead>
 							<tr>
 								<th>Image </th>
-								<th>Product En</th>
+								<th>Product</th>
 								<th>Product Price </th>
 								<th>Quantity </th>
 								<th>Discount </th>
