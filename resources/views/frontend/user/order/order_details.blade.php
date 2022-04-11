@@ -226,7 +226,7 @@
 
   <div class="form-group">
     <label for="label"> Order Return Reason:</label>
-    <textarea name="return_reason" id="" class="form-control" cols="30" rows="05">Return Reason</textarea>    
+    <textarea name="return_reason" id="" class="form-control" cols="30" rows="05"></textarea>    
   </div>
 
   <button type="submit" class="btn btn-danger">Order Return</button>
@@ -234,7 +234,7 @@
 </form>
    @else
 
-   <span class="badge badge-pill badge-warning" style="background: red">You Have send return request for this product</span>
+   <span class="badge badge-pill badge-warning" style="background: red">Return request has been initiated!</span>
    
    @endif 
 

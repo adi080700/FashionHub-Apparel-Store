@@ -48,7 +48,7 @@ My Cart Page
 </div>
 
 
-<!-- <div class="col-md-4 col-sm-12 estimate-ship-tax">
+<div class="col-md-4 col-sm-12 estimate-ship-tax">
 	@if(Session::has('coupon'))
 
 	@else
@@ -79,7 +79,7 @@ My Cart Page
 @endif
 
 
-</div> -->
+</div>
 <!-- /.estimate-ship-tax -->
 
 

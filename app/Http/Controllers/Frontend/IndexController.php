@@ -138,7 +138,9 @@ class IndexController extends Controller
 		$multiImag = MultiImg::where('product_id',$id)->get();
 
 		$cat_id = $product->category_id;
-		$relatedProduct = Product::where('category_id',$cat_id)->where('id','!=',$id)->orderBy('id','DESC')->get();
+		$subsubcat_id = $product->subsubcategory_id;
+		// $relatedProduct = Product::where('category_id',$cat_id)->where('id','!=',$id)->orderBy('id','DESC')->get();
+		$relatedProduct = Product::where('subsubcategory_id',$subsubcat_id)->where('id','!=',$id)->orderBy('id','DESC')->get();
 	 	return view('frontend.product.product_details',compact('product','multiImag','product_color_en','product_color_hin','product_size_en','product_size_hin','relatedProduct'));
 
 	}
@@ -198,6 +200,8 @@ class IndexController extends Controller
 
  // Product Seach 
 	public function ProductSearch(Request $request){
+
+		$request->validate(["search" => "required"]);
 		$item = $request->search;
 		// echo "$item";
         $categories = Category::orderBy('category_name_en','ASC')->get();
@@ -205,6 +209,19 @@ class IndexController extends Controller
 		return view('frontend.product.search',compact('products','categories'));
 
 	}
+
+//Advanced Search 
+public function SearchProduct(Request $request){
+	$request->validate(["search" => "required"]);
+
+	$item = $request->search;		 
+
+	$products = Product::where('product_name_en','LIKE',"%$item%")->select('product_name_en','product_thambnail','selling_price','id','product_slug_en')->limit(5)->get();
+	return view('frontend.product.search_product',compact('products'));
+
+
+
+} // end method 
 
 
 

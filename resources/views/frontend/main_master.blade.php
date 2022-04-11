@@ -136,8 +136,8 @@ $seo = App\Models\Seo::find(1);
         <div class="col-md-4">
 
      <ul class="list-group">
-  <li class="list-group-item">Product Price: <strong class="text-danger">$<span id="pprice"></span></strong>
-<del id="oldprice">$</del>
+  <li class="list-group-item">Product Price: <strong class="text-danger">Rs.<span id="pprice"></span></strong>
+<del id="oldprice">Rs.</del>
    </li>
   <li class="list-group-item">Product Code: <strong id="pcode"></strong></li>
   <li class="list-group-item">Category: <strong id="pcategory"></strong></li>
@@ -232,19 +232,19 @@ function productView(id){
                 $('#pprice').text(data.product.discount_price);
                 $('#oldprice').text(data.product.selling_price);
 
-            } // end prodcut price 
+            } // end product price 
 
             // Start Stock opiton
 
             if (data.product.product_qty > 0) {
                 $('#aviable').text('');
                 $('#stockout').text('');
-                $('#aviable').text('aviable');
+                $('#aviable').text('available');
 
             }else{
                 $('#aviable').text('');
                 $('#stockout').text('');
-                $('#stockout').text('stockout');
+                $('#stockout').text('Out of stock');
             } // end Stock Option 
 
             // Color

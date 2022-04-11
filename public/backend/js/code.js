@@ -39,7 +39,7 @@ $(function(){
   
                   Swal.fire({
                     title: 'Are you sure?',
-                    text: "Once Confirmed, You will not be able to go back!",
+                    // text: "Once Confirmed, You will not be able to go back!",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
@@ -50,7 +50,7 @@ $(function(){
                       window.location.href = link
                       Swal.fire(
                         'Confirm!',
-                        'Confirm Changes',
+                        'Order Confirmed',
                         'success'
                       )
                     }
@@ -72,7 +72,7 @@ $(function(){
   
                   Swal.fire({
                     title: 'Are you sure?',
-                    text: "Once Processed, you will not be able to go back!",
+                    // text: "Once Processed, you will not be able to go back!",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
@@ -83,7 +83,7 @@ $(function(){
                       window.location.href = link
                       Swal.fire(
                         'Processing!',
-                        'Processing Changes',
+                        'Order Processed',
                         'success'
                       )
                     }
@@ -105,7 +105,7 @@ $(function(){
   
                   Swal.fire({
                     title: 'Are you sure ?',
-                    text: "Once Picked, You will not be able to go back!",
+                    // text: "Once Picked, You will not be able to go back!",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
@@ -116,7 +116,7 @@ $(function(){
                       window.location.href = link
                       Swal.fire(
                         'Picked!',
-                        'Picked Changes',
+                        'Order Picked',
                         'success'
                       )
                     }
@@ -138,7 +138,7 @@ $(function(){
   
                   Swal.fire({
                     title: 'Are you sure ?',
-                    text: "Once shipped, You will not be able to go back!",
+                    // text: "Once shipped, You will not be able to go back!",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
@@ -149,7 +149,7 @@ $(function(){
                       window.location.href = link
                       Swal.fire(
                         'shipped!',
-                        'shipped Changes',
+                        'Order Shipped',
                         'success'
                       )
                     }
@@ -172,7 +172,7 @@ $(function(){
   
                   Swal.fire({
                     title: 'Are you sure ?',
-                    text: "Once delivered, You will not be able to go back!",
+                    // text: "Once delivered, You will not be able to go back!",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
@@ -183,7 +183,7 @@ $(function(){
                       window.location.href = link
                       Swal.fire(
                         'delivered!',
-                        'delivered Changes',
+                        'Order Delivered',
                         'success'
                       )
                     }
