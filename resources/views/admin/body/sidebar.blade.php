@@ -306,7 +306,7 @@
      @if($stock == true)
 
 
- <li class="treeview {{ ($prefix == '/stock')?'active':'' }}  ">
+ <!-- <li class="treeview {{ ($prefix == '/stock')?'active':'' }}  ">
           <a href="#">
             <i data-feather="file"></i>
             <span>Manage Stock </span>
@@ -322,7 +322,7 @@
         </li>    
 
 		    @else
-        @endif
+        @endif -->
 
      @if($reports == true)
 

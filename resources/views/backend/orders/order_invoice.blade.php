@@ -54,7 +54,7 @@
             <pre class="font" >
                FashionHub Head Office
                Email:fashionhub@gmail.com <br>
-               Mob: 1245454545 <br>
+               Mob: 1234567890 <br>
                Thadomal Shahani,Bandra(w),Mumbai-400050 <br>
               
             </pre>
@@ -144,12 +144,12 @@
         <td align="right" >
             <h2><span style="color: green;">Subtotal:</span>Rs.{{ $order->amount }}</h2>
             <h2><span style="color: green;">Total:</span> Rs.{{ $order->amount }}</h2>
-            {{-- <h2><span style="color: green;">Full Payment PAID</h2> --}}
+            {{-- <h2><span style="color: green;">Full Payment Paid</h2> --}}
         </td>
     </tr>
   </table>
   <div class="thanks mt-3">
-    <p>Thanks For Buying Products..!!</p>
+    <p>Thank You!</p>
   </div>
   <div class="authority float-right mt-5">
       <p>-----------------------------------</p>
